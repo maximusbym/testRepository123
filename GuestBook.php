@@ -32,7 +32,7 @@ if(
 	// Если к нам идёт Ajax запрос, то ловим его
 	$newMessage['time'] = date('d.m.Y H:i', $newMessage['time']);
 	echo json_encode( [ 'message' => $newMessage ] );
-	exit;
+	exit();
 }
 	
 include "GuestBookView.php";
